@@ -19,7 +19,7 @@ jobs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::576277063358:oidc-provider/token.actions.githubusercontent.com
+          role-to-assume: arn:aws:iam::576277063358:role/js_dpp1_oids_github_s3_test
           role-session-name: samplerolesession
           aws-region: ${{ env.AWS_REGION }}
       # Upload a file to AWS s3

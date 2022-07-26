@@ -9,7 +9,7 @@ env:
 # permission can be added at job level or workflow level    
 permissions:
       id-token: write
-      contents: read    # This is required for actions/checkout
+      contents: read    
 jobs:
   S3PackageUpload:
     runs-on: ubuntu-latest

@@ -22,7 +22,7 @@ jobs:
           role-to-assume: arn:aws:iam::576277063358:role/js_dpp1_oids_github_s3_test
           role-session-name: samplerolesession
           aws-region: ${{ env.AWS_REGION }}
-      # Upload a file to AWS s3
+      # Upload a file to AWS s3 testing
       - name:  Copy index.html to s3
         run: |
           aws s3 cp ./index.html s3://${{ env.BUCKET_NAME }}/
